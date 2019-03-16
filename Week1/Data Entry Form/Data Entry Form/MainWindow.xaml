@@ -1,0 +1,27 @@
+﻿<Window x:Class="Data_Entry_Form.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Data_Entry_Form"
+        mc:Ignorable="d"
+        Title="Data Entry Form" Height="260" Width="450">
+    <Grid Margin="0,0,0.2,-11">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="lbName" Content="Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="42"/>
+        <Label Content="Residency" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Height="26" Width="62"/>
+        <Label Content="Semester" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Height="26" Width="59"/>
+        <Label Content="Courses" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Height="26" Width="51"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="124,13,0,0" TextWrapping="Wrap" Text="George Brown" VerticalAlignment="Top" Width="309"/>
+        <RadioButton Content="Domestic" HorizontalAlignment="Left" Margin="144,45,0,0" VerticalAlignment="Top" Height="15" Width="69" GroupName="Residency"/>
+        <RadioButton Content="International" HorizontalAlignment="Left" Margin="257,45,0,0" VerticalAlignment="Top" Height="15" Width="86" IsChecked="True" GroupName="Residency"/>
+        <ComboBox x:Name="cBox" HorizontalAlignment="Left" Margin="124,72,0,0" VerticalAlignment="Top" Width="309" Height="22" SelectedIndex="4"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="83" Margin="124,103,0,0" VerticalAlignment="Top" Width="309" SelectionMode="Multiple"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="21,194,0,0" VerticalAlignment="Top" Width="192" Click="BtnClear_Click" Height="19"/>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="218,194,0,0" VerticalAlignment="Top" Width="215" Click="BtnOK_Click" Height="19"/>
+
+    </Grid>
+</Window>

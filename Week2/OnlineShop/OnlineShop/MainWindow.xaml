@@ -1,0 +1,33 @@
+﻿<Window x:Class="OnlineShop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnlineShop"
+        mc:Ignorable="d"
+        Title="Centennial - SeoYoungJung(300981742)" Height="500" Width="470">
+    <Grid>
+        <ComboBox x:Name="ElectronicsBox" HorizontalAlignment="Left" Margin="20,27,0,0" VerticalAlignment="Top" Width="188" SelectionChanged="ElectronicsBox_SelectionChanged"/>
+        <ComboBox x:Name="BooksBox" HorizontalAlignment="Left" Margin="20,74,0,0" VerticalAlignment="Top" Width="188" SelectionChanged="BooksBox_SelectionChanged"/>
+        <ComboBox x:Name="ToysBox" HorizontalAlignment="Left" Margin="20,119,0,0" VerticalAlignment="Top" Width="188" SelectionChanged="ToysBox_SelectionChanged"/>
+        <ComboBox x:Name="JewelryBox" HorizontalAlignment="Left" Margin="20,169,0,0" VerticalAlignment="Top" Width="188" SelectionChanged="JewelryBox_SelectionChanged"/>
+        <ListBox x:Name="LBox" HorizontalAlignment="Left" Height="224" Margin="225,26,0,0" VerticalAlignment="Top" Width="215"/>
+        <Label x:Name="SubTotalLabel" Content="SubTotal :" HorizontalAlignment="Left" Margin="236,269,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="TaxLabel" Content="Tax(13%) :" HorizontalAlignment="Left" Margin="236,289,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="TotalLabel" Content="Total :" HorizontalAlignment="Left" Margin="236,309,0,0" VerticalAlignment="Top"/>
+        <Button Content="ClearButton" HorizontalAlignment="Left" Margin="294,346,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.043,0.733" Click="Button_Click"/>
+        <Label Content="Electornics" HorizontalAlignment="Left" Margin="20,5,0,0" VerticalAlignment="Top"/>
+        <Label Content="Books" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="Toys" HorizontalAlignment="Left" Margin="20,95,0,0" VerticalAlignment="Top"/>
+        <Label Content="Jewelry" HorizontalAlignment="Left" Margin="20,143,0,0" VerticalAlignment="Top"/>
+        <StatusBar DockPanel.Dock="Bottom" Margin="0,0,-0.4,0.4" Height="79" VerticalAlignment="Bottom">
+            <Hyperlink NavigateUri="https://www.centennialcollege.ca/" RequestNavigate="Hyperlink_RequestNavigate">
+                <Image Height="72" Width="454" Source="SY.png" />
+            </Hyperlink>
+            <StatusBarItem Margin="0,0,0,-0.6" Height="21" VerticalAlignment="Bottom">
+                <TextBlock Name="lblCursorPosition" />
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+
+</Window>
